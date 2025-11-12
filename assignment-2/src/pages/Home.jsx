@@ -1,7 +1,9 @@
 
 import React from "react";
 import Header from "../components/Header";
-import BookmarkForm from "../components/BookmarkForm";
+
+import Footer from "../components/Footer";
+import MainContent from "../components/MainContent";
 
 const Home = () => {
   return (
@@ -11,8 +13,10 @@ const Home = () => {
 
       {/* Main content */}
       <main className="max-w-7xl mx-auto ">
-        <BookmarkForm />
+        
+        <MainContent />
       </main>
+      <Footer />
     </div>
   );
 };
