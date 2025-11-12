@@ -1,7 +1,14 @@
 // src/components/SearchAndSort.jsx
-import React from "react";
+import React, { useState } from "react";
 
-const SearchAndSort = ({ searchTerm, setSearchTerm }) => {
+const SearchAndSort = ({ searchTerm, setSearchTerm, sortOption, setSortOption }) => {
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  const handleSortChange = (option) => {
+    setSortOption(option);
+    setShowDropdown(false);
+  };
+
   return (
     <section className="rounded-3xl border border-neutral-800 bg-gradient-to-br from-neutral-900/80 to-neutral-900/40 p-6 shadow-2xl shadow-black/40 backdrop-blur">
       <div className="flex flex-col gap-4 lg:flex-row lg:items-center">
@@ -27,13 +34,57 @@ const SearchAndSort = ({ searchTerm, setSearchTerm }) => {
         </label>
 
         {/* Sort Button */}
-        <div className="flex flex-wrap gap-2">
-          <button className="inline-flex items-center gap-2 rounded-2xl border border-neutral-800/80 bg-neutral-900/80 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-neutral-300 transition hover:border-blue-500 hover:text-white">
-            <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 4h18l-8 8v6l-4 4v-8z"></path>
+        <div className="relative">
+          <button
+            onClick={() => setShowDropdown(!showDropdown)}
+            className="inline-flex items-center gap-2 rounded-2xl border border-neutral-800/80 bg-neutral-900/80 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-neutral-300 transition hover:border-blue-500 hover:text-white"
+          >
+            <svg
+              className="h-4 w-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M3 4h18l-8 8v6l-4 4v-8z"
+              ></path>
             </svg>
             Sort by
           </button>
+
+          {showDropdown && (
+            <div className="absolute right-0 mt-2 w-56 rounded-xl border border-neutral-800 bg-neutral-900/70 shadow-lg text-white z-10">
+              <ul>
+                <li
+                  className="cursor-pointer px-4 py-2 hover:bg-blue-500/20"
+                  onClick={() => handleSortChange("name-asc")}
+                >
+                  Name Ascending
+                </li>
+                <li
+                  className="cursor-pointer px-4 py-2 hover:bg-blue-500/20"
+                  onClick={() => handleSortChange("name-desc")}
+                >
+                  Name Descending
+                </li>
+                <li
+                  className="cursor-pointer px-4 py-2 hover:bg-blue-500/20"
+                  onClick={() => handleSortChange("date-asc")}
+                >
+                  Date Ascending
+                </li>
+                <li
+                  className="cursor-pointer px-4 py-2 hover:bg-blue-500/20"
+                  onClick={() => handleSortChange("date-desc")}
+                >
+                  Date Descending
+                </li>
+              </ul>
+            </div>
+          )}
         </div>
       </div>
     </section>
