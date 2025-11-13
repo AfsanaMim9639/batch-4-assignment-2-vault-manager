@@ -2,54 +2,21 @@ import React, { useState } from "react";
 import PasswordCard from "./PasswordCard";
 import SearchAndSort from "./SearchAndSort";
 import BookmarkForm from "./BookmarkForm";
-
-// Initial sample data
-const initialServices = [
-  {
-    name: "Facebook",
-    initials: "Fb",
-    category: "Social",
-    url: "facebook.com",
-    username: "john.doe@email.com",
-    password: "••••••••",
-    bgColor: "bg-blue-500/10",
-    textColor: "text-blue-400",
-    createdAt: Date.now() - 1000000,
-  },
-  {
-    name: "YouTube",
-    initials: "Yt",
-    category: "Video",
-    url: "youtube.com",
-    username: "myaccount",
-    password: "••••••••",
-    bgColor: "bg-red-500/10",
-    textColor: "text-red-400",
-    createdAt: Date.now() - 500000,
-  },
-  {
-    name: "Dribbble",
-    initials: "Db",
-    category: "Design",
-    url: "dribbble.com",
-    username: "designer_pro",
-    password: "••••••••",
-    bgColor: "bg-pink-500/10",
-    textColor: "text-pink-300",
-    createdAt: Date.now() - 2000000,
-  },
-];
+import initialServices from "../data/initialServices.json"; // ✅ Imported dummy data
 
 const MainContent = () => {
   const [services, setServices] = useState(initialServices);
   const [searchTerm, setSearchTerm] = useState("");
-  const [sortOption, setSortOption] = useState("date-desc"); // default
+  const [sortOption, setSortOption] = useState("date-desc");
 
-  // নতুন bookmark যোগ করা
+  // ✅ নতুন bookmark যোগ করা (color সহ)
   const handleAddBookmark = (bookmark) => {
     const domain = bookmark.url.replace(/^https?:\/\//, "").split(".")[0];
     const name = domain.charAt(0).toUpperCase() + domain.slice(1);
     const initials = domain.substring(0, 2).toUpperCase();
+
+    // 🔹 এখানে color সরাসরি form থেকে আসবে
+    const bgColor = bookmark.color || "bg-neutral-700/40";
 
     const newService = {
       name,
@@ -58,22 +25,36 @@ const MainContent = () => {
       url: bookmark.url.replace(/^https?:\/\//, ""),
       username: bookmark.username,
       password: bookmark.password,
-      bgColor: bookmark.color,
+      bgColor, // ✅ color form theke
       textColor: "text-white",
       createdAt: Date.now(),
     };
 
-    setServices([newService, ...services]);
+    setServices((prevServices) => {
+      const updated = [...prevServices];
+
+      // Dummy data গুলোর নাম চেক করে replace করবো
+      const dummyIndex = updated.findIndex((s) =>
+        ["Facebook", "YouTube", "Dribbble"].includes(s.name)
+      );
+
+      if (dummyIndex !== -1) {
+        updated[dummyIndex] = newService;
+        return updated;
+      } else {
+        return [newService, ...updated];
+      }
+    });
   };
 
-  // Filter by search term
-  let filteredServices = services.filter(
+  // ✅ Filter
+  const filteredServices = services.filter(
     (s) =>
       s.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       s.url.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  // Sorting
+  // ✅ Sort
   filteredServices.sort((a, b) => {
     switch (sortOption) {
       case "name-asc":
@@ -92,9 +73,10 @@ const MainContent = () => {
   return (
     <main className="mt-8">
       <div className="max-w-7xl mx-auto space-y-10 px-4">
+        {/* ✅ Bookmark form */}
         <BookmarkForm onAddBookmark={handleAddBookmark} />
 
-        {/* Search and Sort */}
+        {/* ✅ Search & Sort */}
         <SearchAndSort
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
@@ -102,7 +84,7 @@ const MainContent = () => {
           setSortOption={setSortOption}
         />
 
-        {/* Password Cards Grid */}
+        {/* ✅ Password Cards */}
         {filteredServices.length > 0 ? (
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
             {filteredServices.map((service, idx) => (

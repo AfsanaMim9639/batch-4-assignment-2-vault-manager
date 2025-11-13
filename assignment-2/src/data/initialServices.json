@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Facebook",
+    "initials": "Fb",
+    "category": "Social",
+    "url": "facebook.com",
+    "username": "john.doe@email.com",
+    "password": "••••••••",
+    "bgColor": "bg-blue-500/10",
+    "textColor": "text-blue-400",
+    "createdAt": 1731540000000
+  },
+  {
+    "name": "YouTube",
+    "initials": "Yt",
+    "category": "Video",
+    "url": "youtube.com",
+    "username": "myaccount",
+    "password": "••••••••",
+    "bgColor": "bg-red-500/10",
+    "textColor": "text-red-400",
+    "createdAt": 1731540500000
+  },
+  {
+    "name": "Dribbble",
+    "initials": "Db",
+    "category": "Design",
+    "url": "dribbble.com",
+    "username": "designer_pro",
+    "password": "••••••••",
+    "bgColor": "bg-pink-500/10",
+    "textColor": "text-pink-300",
+    "createdAt": 1731539000000
+  },
+  {
+    "name": "Twitch",
+    "initials": "Tw",
+    "category": "Streaming",
+    "url": "twitch.tv",
+    "username": "streamer_123",
+    "password": "••••••••",
+    "bgColor": "bg-purple-500/10",
+    "textColor": "text-purple-300",
+    "createdAt": 1731538000000
+  },
+  {
+    "name": "GitHub",
+    "initials": "Gh",
+    "category": "Productivity",
+    "url": "github.com",
+    "username": "devuser",
+    "password": "••••••••",
+    "bgColor": "bg-neutral-500/10",
+    "textColor": "text-neutral-300",
+    "createdAt": 1731537000000
+  },
+  {
+    "name": "Netflix",
+    "initials": "Nx",
+    "category": "Entertainment",
+    "url": "netflix.com",
+    "username": "user@email.com",
+    "password": "••••••••",
+    "bgColor": "bg-red-600/10",
+    "textColor": "text-red-400",
+    "createdAt": 1731536000000
+  },
+  {
+    "name": "Amazon",
+    "initials": "Am",
+    "category": "Shopping",
+    "url": "amazon.com",
+    "username": "shopper@email.com",
+    "password": "••••••••",
+    "bgColor": "bg-yellow-500/10",
+    "textColor": "text-yellow-400",
+    "createdAt": 1731535000000
+  },
+  {
+    "name": "Spotify",
+    "initials": "Sp",
+    "category": "Music",
+    "url": "spotify.com",
+    "username": "musiclover",
+    "password": "••••••••",
+    "bgColor": "bg-green-500/10",
+    "textColor": "text-green-400",
+    "createdAt": 1731534000000
+  }
+]
