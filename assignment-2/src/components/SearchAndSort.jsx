@@ -1,4 +1,4 @@
-// src/components/SearchAndSort.jsx
+
 import React, { useState } from "react";
 
 const SearchAndSort = ({ searchTerm, setSearchTerm, sortOption, setSortOption }) => {

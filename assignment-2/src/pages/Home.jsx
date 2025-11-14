@@ -7,7 +7,7 @@ import MainContent from "../components/MainContent";
 
 const Home = () => {
   return (
-    <div className="bg-neutral-950 min-h-screen text-white">
+    <div className="bg-neutral-900 min-h-screen text-white">
       {/* Header */}
       <Header />
 
