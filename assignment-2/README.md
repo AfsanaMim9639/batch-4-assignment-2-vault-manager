@@ -20,24 +20,25 @@ A modern, user-friendly password manager built with React and Tailwind CSS
 <div align="center">
 
 ### Form
-![Dashboard](./assets/images/Form.PNG)
-*Clean and intuitive interface to view all your saved passwords*
-
-### Card with password toggle feature
-![Add Password Form](./public/screenshots/add-form.png)
+![Form](/images/Form.png)
 *Easy-to-use form to add new credentials*
 
+### Card with password toggle
+![Card](/images/Card.png)
+*Show/hide passwords feature*
+
 ### 🔍 Search & Filter
-![Search Feature](./public/screenshots/search.png)
+![Search](/images/Search.png)
 *Quickly find any password with real-time search*
 
 </div>
 
+
 ---
 
-## 🌟 What is SecureVault?
+## 🌟 What is Vault-Manager?
 
-SecureVault is a **simple and beautiful password manager** that helps you:
+Vault-Manager is a **simple and beautiful password manager** that helps you:
 - 💾 Store website login credentials
 - 🔍 Search and find passwords quickly
 - 📊 Organize passwords by categories
