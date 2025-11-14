@@ -28,7 +28,7 @@ Vault-Manager is a modern password manager built with **React** and **Tailwind C
 *Show/hide passwords feature*
 
 ### 🔍 Search & Filter
-![Search](./public//images/Search.PNG)
+![Search](./public//images/search.PNG)
 *Quickly find any password with real-time search*
 
 </div>
