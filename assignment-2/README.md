@@ -20,15 +20,15 @@ Vault-Manager is a modern password manager built with **React** and **Tailwind C
 <div align="center">
 
 ### Form
-![Form](./public/images/Form.png)
+![Form](./public/images/Form.PNG)
 *Easy-to-use form to add new credentials*
 
 ### Card with password toggle
-![Card](./public//images/Card.png)
+![Card](./public//images/Card.PNG)
 *Show/hide passwords feature*
 
 ### 🔍 Search & Filter
-![Search](./public//images/Search.png)
+![Search](./public//images/Search.PNG)
 *Quickly find any password with real-time search*
 
 </div>
@@ -227,16 +227,6 @@ Before submitting, make sure your Vault-Manager project meets the following:
 - [ ] ✅ README is complete and polished
 
 
-- [x] ✅ Project runs without errors
-- [x] ✅ All features are working
-- [x] ✅ Code is clean and organized
-- [x] ✅ Responsive design implemented
-- [x] ✅ Search functionality working
-- [x] ✅ Sort functionality working
-- [x] ✅ Password show/hide working
-- [x] ✅ Form validation added
-- [x] ✅ README file completed
-- [x] ✅ Screenshots added
 
 ---
 
