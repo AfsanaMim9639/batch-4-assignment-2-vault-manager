@@ -1,4 +1,4 @@
-# 🔐 SecureVault - Password Manager
+# 🔐 Vault - Manager
 
 <div align="center">
 
@@ -8,8 +8,8 @@
 
 A modern, user-friendly password manager built with React and Tailwind CSS
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=vercel)](https://your-live-link.vercel.app)
-[![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-blue?style=for-the-badge&logo=github)](https://github.com/yourusername/password-manager)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=vercel)](https://batch-4-assignment-2-vault-manager.vercel.app/)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-blue?style=for-the-badge&logo=github)](https://github.com/AfsanaMim9639/batch-4-assignment-2-vault-manager.git)
 
 </div>
 
@@ -81,14 +81,14 @@ SecureVault is a **simple and beautiful password manager** that helps you:
 ## 🚀 How to Use This Project
 
 ### Option 1: View Live Demo 🌐
-Simply click the live demo link above to use the app right away!
+[Simply click the live demo link above to use the app right away!](https://batch-4-assignment-2-vault-manager.vercel.app/)
 
 ### Option 2: Run on Your Computer 💻
 
 **Step 1: Download the Code**
 ```bash
 # Clone this repository
-git clone https://github.com/yourusername/password-manager.git
+git clone https://github.com/AfsanaMim9639/batch-4-assignment-2-vault-manager.git
 
 # Go to project folder
 cd password-manager
@@ -119,7 +119,7 @@ That's it! 🎉 Your password manager is now running!
 
 1. Click the **"Add New Password"** button
 2. Fill in these details:
-   - 🌐 Website URL (e.g., `https://facebook.com`)
+   - 🌐 Website URL (e.g., `https://batch-4-assignment-2-vault-manager.vercel.app/`)
    - 🎨 Pick a color for the icon
    - 📂 Choose a category (Social, Video, etc.)
    - 👤 Enter your username
@@ -131,7 +131,7 @@ That's it! 🎉 Your password manager is now running!
 - Type the website name in the **search bar** at the top
 - Results will appear instantly as you type!
 
-### 3️⃣ **Sorting Your Passwords**
+### 3️⃣ **Sorting Your Information**
 
 - Click the **"Sort By"** button
 - Choose how you want to sort:
@@ -148,11 +148,8 @@ That's it! 🎉 Your password manager is now running!
 ## 📂 Project Structure
 
 ```
-password-manager/
-│
-├── public/                  # Images and screenshots
-│   ├── banner.png
-│   └── screenshots/
+password-manager/   
+│    
 │
 ├── src/                     # Source code
 │   ├── components/          # React components
@@ -163,6 +160,8 @@ password-manager/
 │   │
 │   ├── App.jsx              # Main app component
 │   └── main.jsx             # Entry point
+|   |__pages/                #React Pages
+|       |___Home.jsx
 │
 ├── package.json             # Dependencies
 └── README.md               # This file!
@@ -208,18 +207,6 @@ Want to make this project better? Here are some ideas:
 
 ---
 
-## 🤝 Want to Contribute?
-
-I welcome contributions! Here's how:
-
-1. **Fork** this repository
-2. **Create** a new branch (`git checkout -b feature/amazing-feature`)
-3. **Make** your changes
-4. **Commit** (`git commit -m 'Add amazing feature'`)
-5. **Push** (`git push origin feature/amazing-feature`)
-6. **Open** a Pull Request
-
----
 
 ## 📝 Assignment Submission Checklist
 
@@ -236,53 +223,8 @@ I welcome contributions! Here's how:
 
 ---
 
-## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
 
----
-
-## 👨‍💻 Developer Info
-
-<div align="center">
-
-### **Your Name**
-**Student ID:** 123456
-
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=for-the-badge&logo=github)](https://github.com/yourusername)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/yourusername)
-[![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail)](mailto:your.email@example.com)
-
-</div>
-
----
-
-## 🙏 Acknowledgments
-
-- Thanks to **React.js** team for the amazing library
-- Thanks to **Tailwind CSS** for beautiful styling
-- Thanks to my instructor for guidance
-- Icons from [Lucide Icons](https://lucide.dev)
-
----
-
-<div align="center">
-
-### ⭐ If you found this project helpful, please give it a star!
-
-**Made with ❤️ for Assignment 2**
-
----
-
-### 📊 Project Stats
-
-![Repo Size](https://img.shields.io/github/repo-size/yourusername/password-manager)
-![Last Commit](https://img.shields.io/github/last-commit/yourusername/password-manager)
-![Languages](https://img.shields.io/github/languages/count/yourusername/password-manager)
-
-</div>
-
----
 
 <div align="center">
 
